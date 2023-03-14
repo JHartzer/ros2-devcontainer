@@ -1,0 +1,18 @@
+{
+    "name": "ROS2-env",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-vscode.cpptools",
+                "twxs.cmake",
+                "zachflower.uncrustify"
+            ]
+        }
+    },
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "workspaceMount": "src=${localWorkspaceFolder},dst=/ros2_devcontainer_ws/src/ros2_devcontainer,type=bind,consistency=cached",
+    "workspaceFolder": "/ros2_devcontainer_ws/src/ros2_devcontainer"
+}

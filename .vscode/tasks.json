@@ -1,0 +1,32 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        // Build tasks
+        {
+            "label": "colcon build",
+            "detail": "Build devcontainer_package",
+            "type": "shell",
+            "command": "colcon build --symlink-install --packages-select devcontainer_package --event-handlers console_cohesion+ --cmake-args '-DCMAKE_EXPORT_COMPILE_COMMANDS=On'",
+            "problemMatcher": "$gcc",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/../../"
+            },
+        },
+        // Source workspace
+        {
+            "label": "source-workspace",
+            "detail": "Sources the current workspace",
+            "type": "shell",
+            "command": "source ${workspaceFolder}/../../install/setup.bash",
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": "$gcc"
+        },
+    ],
+}

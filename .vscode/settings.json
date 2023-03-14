@@ -1,0 +1,26 @@
+{
+    "editor.formatOnSave": true,
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/humble/lib/python3.8/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/opt/ros/humble/lib/python3.8/site-packages"
+    ],
+    "files.exclude": {
+        "**/__pycache__": true
+    },
+    "[cpp]": {
+        "editor.wordBasedSuggestions": false,
+        "editor.suggest.insertMode": "replace",
+        "editor.semanticHighlighting.enabled": true,
+        "editor.defaultFormatter": "zachflower.uncrustify"
+    },
+    "cmake.buildDirectory": "${workspaceFolder}/../../build/${workspaceFolderBasename}",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python",
+    },
+    "python.linting.flake8Enabled": true,
+    "cmake.configureOnOpen": true,
+    "ros.distro": "humble",
+    "terminal.integrated.gpuAcceleration": "off",
+}
